@@ -11,3 +11,7 @@ class Todo:
 
         self.completed = True
 
+    def add_tag(self, tag: str):
+        if tag not in self.tags:
+            self.tags.append(tag)
+
