@@ -8,7 +8,6 @@ class Todo:
         self.tags: list[str] = []
 
     def mark_completed(self):
-
         self.completed = True
 
     def add_tag(self, tag: str):
@@ -17,6 +16,12 @@ class Todo:
 
     def __str__(self) -> str:
         return f"{self.code_id} - {self.title}"
+
+class TodoBook:
+
+    def __int__(self):
+        self.todos: dict[int, Todo] = {}
+
 
 
 
